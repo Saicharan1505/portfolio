@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  gap: 28px;
+  padding: 16px 32px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.95rem;
+  padding-bottom: 6px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+.navbar a:hover {
+  color: #0f766e;
+}
+
+/* Active route */
+.navbar a.active {
+  color: #0f766e;
+  font-weight: 500;
+}
+
+/* Underline indicator */
+.navbar a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0f766e;
+  border-radius: 2px;
+}
